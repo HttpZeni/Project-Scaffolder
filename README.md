@@ -1,4 +1,4 @@
-# Zen 🧘
+# Zen
 
 A fast and simple CLI tool to scaffold new projects instantly.
 
@@ -12,7 +12,7 @@ zen create [language] [path]
 
 ## Examples
 
-```
+```bash
 zen create rust my-project
 zen create python C:\Coding\my-project
 zen create javascript
@@ -20,23 +20,11 @@ zen create javascript
 
 ## Supported Languages
 
-| Language | Alias |
-|----------|-------|
-| Rust | rust |
-| Python | python |
-| C++ | cpp |
-| JavaScript | javascript |
-| TypeScript | typescript |
-| C# | csharp |
-| Go | go |
-| Java | java |
-| Kotlin | kotlin |
-| Lua | lua |
-| Ruby | ruby |
-| PHP | php |
-| Bash | bash |
-| PowerShell | powershell |
-
+| Language   | Alias        |
+|------------|--------------|
+| Rust       | rust         |
+| Python     | python       |
+| C++        | cpp          |
 ## What Zen creates
 
 ```
@@ -51,10 +39,11 @@ Git is initialized automatically.
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `zen create [language] [path]` | Create a new project |
-| `zen help` | Show available commands |
+| Command                        | Description                        |
+|--------------------------------|------------------------------------|
+| `zen create [language] [path]` | Scaffold a new project             |
+| `zen list`                     | List all supported languages       |
+| `zen help`                     | Show available commands            |
 
 ## Built with
 

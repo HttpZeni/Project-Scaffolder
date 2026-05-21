@@ -114,6 +114,14 @@ fn help() {
     }
 }
 
+fn list() {
+    let valid_langs = all_languages_hash_map();
+
+    for lang in valid_langs {
+        debug::log(format!("{}", lang.0).as_str());
+    }
+}
+
 fn check_for_use(valid_args: &Vec<String>) {
     if valid_args.is_empty() {
         help();
@@ -128,10 +136,12 @@ fn check_for_use(valid_args: &Vec<String>) {
 
     if let Some(use_fn) = uses.get(&call.as_str()) {
         use_fn(&valid_args);
-    } else if call != "help" {
-        debug::error("Use doesn't exist!");
-    } else {
+    } else if call == "help" {
         help();
+    } else if call == "list" {
+        list();
+    } else {
+        debug::error("Use doesn't exist!");
     }
 }
 
